@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable Cards</title>
+<style>
+    /* Style for the container holding the cards */
+    .card-container {
+        width: 300px; /* Adjust according to your layout */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent cards from wrapping */
+    }
+
+    /* Style for individual cards */
+    .card {
+        display: inline-block; /* Display cards in a row */
+        width: 200px; /* Adjust according to your layout */
+        margin-right: 10px; /* Add some space between cards */
+        border: 1px solid #ccc; /* Add border for visual separation */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        padding: 10px; /* Add padding for content spacing */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add box shadow for depth */
+    }
+</style>
 </head>
 <body>
     <h3>Tourism tinder</h3><br><br><br>
     <p>We are a trusted website</p><br><br><br>
     <p>Please scroll between these cards to find relevant attractions</p>
+    <body>
+<div class="card-container">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <!-- Add more cards as needed -->
+</div>
 </body>
 </html>
