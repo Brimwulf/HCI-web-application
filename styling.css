@@ -27,17 +27,33 @@
 	font-size: 1.5rem;
 }
 .hero {
-	background-color: #eee;
+	background-color: #16161d;
 	height: 400px;
 	overflow: hidden;
 	position: relative;
 }
 .hero h1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	line-height: 12;
+	font-family: 'Roboto';
+	color: white;
+	padding: 10px;
 }
+.hero p {
+	font-family: 'Montserrat';
+	font-size: 16px;
+	color: white;
+	padding: 10px;
+}
+.signButton {
+	text-align: center;
+	transform: translate(18%, 80%);
+}
+.signButton p {
+	position: absolute;
+	bottom: 180px:
+	font-family: 'Cabin';
+	font-size: 18px;
+}
+
 .box1 img {
 	width: 600px;
 	height: 400px;
