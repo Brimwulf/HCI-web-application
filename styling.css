@@ -74,6 +74,7 @@
 }
 .hero-cards-container {
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-content: center;
 	height: 300px;
@@ -91,6 +92,22 @@
 	height: 100%;
 	border-radius: 10px;
 	object-fit: cover;
+}
+.hero-cards-container .text {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: bottom;
+	align-items: bottom;
+	color: white;
+	font-size: 0.8em;
+	position: absolute;
+	bottom: 0;
+	width: inherit;
+	margin: 5px;
+}
+.hero-cards-container .text h3 {
+	font-size: 0.8em;
 }
 .regenerate {
 	display: flex;
