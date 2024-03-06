@@ -3,17 +3,27 @@
 	<head>
 		<title>HCI Web application</title>
 		<link rel="stylesheet" href="styling.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for hamburger menu-->
 	</head>
 
-	<body style="background-color: #2c2c2c;">	<!--Remove the bg colour later-->
+	<body>
 		<div class="header">
-			<h1 class="logo">This is the start of the website</h1>
+			<h1 class="logo">BusinessEco</h1>
 
 			<ul class="nav">
 				<li><a href="">Home</a></li>
 				<li><a href="">About</a></li>
 				<li><a href="loginpage.html">Login</a></li>
-				<li><a href="">placeholder</a></li>
+				<li><a href=#home class="active">placeholder</a>
+					<div id="myLinks">
+						<a href="#news">News</a>
+						<a href="#contact">Contact</a>
+						<a href="#about">About</a>
+					</div>
+				</li>
+				<a href="javascript:void(0);" class="icon" onclick="hamburgFunc()">
+					<i class="fa fa-bars"></i>
+				</a>
 			</ul>
 		</div>
 		<div class="hero">
@@ -65,5 +75,48 @@
 		<div class="homeItem">
 			<h1>Home item 3</h1>
 		</div>
+
+		<footer class="footer-container">
+			<div class="column">
+				<h1>Company</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+			<div class="column">
+				<h1>Contact</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+			<div class="column">
+				<h1>Help & FAQs</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+			<div class="column">
+				<h1>Careers</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+			<div class="column">
+				<h1>Social</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+		</footer>
 	</body>
 </html>
