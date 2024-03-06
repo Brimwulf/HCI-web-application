@@ -1,14 +1,14 @@
 /* This is the style sheet for the website */
 
-@font-face {
-	font-family: Moon-Bold;
-	src: url('FontsFree-Net-MoonBold.ttf') format('truetype');
-}
-*, html{
+
+body {
 	margin: 0;
 	padding: 0;
 	font-family: Moon-Bold;
+	background-image: url('iu.png');
+	background-size: cover;
 }
+
 .header {
 	padding: 0 70px;
 	display: flex;
@@ -141,4 +141,55 @@
 	justify-content: center;
 	align-items: center;
 	height: 300px;
+}
+
+.login-box {
+	background-color: grey;
+	display: flex;
+	position: fixed;
+	width: fit-content;
+	top: 25%;
+	left: 25%;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	border-radius: 10px;
+	list-style: none;
+	box-shadow: 0 0 10px 0 black;
+}
+.login-promo, #login-form {
+    flex: 1;
+    margin: 10px;
+}
+
+.login-right {
+	background-color: whitesmoke;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.login-promo {
+	background-color: grey;
+	color: white;
+}
+
+input[type=text] {
+	border-radius: 10px;
+	border: black 1px solid;
+	padding: 10px
+}
+
+input[type=password] {
+	border-radius: 10px;
+	border: black 1px solid;
+	padding: 10px
+}
+
+input[type=submit] {
+	border-radius: 10px;
+	border: black 1px solid;
+	padding: 10px;
+	background-color: grey;
+	color: white;
+	width: 18rem;
 }

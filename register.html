@@ -2,7 +2,7 @@
 <html lang="en-GB">
 
 <head>
-	<title>HCI-Web-application/login</title>
+	<title>Register</title>
 	<link rel="stylesheet" href="styling.css">
 </head>
 <!-- This webpage needs to have a section welcoming the user to the login page and it needs to have
@@ -19,22 +19,17 @@
 		</ul>
 	</div>
 	<div class="login-box">
-		<div class="login-promo">
-			<h2>Get personalised recommendations with an account</h2>
-		</div>
-		<div class="login-right">
-		<h2>Login to your account</h2>
-		<form id="login-form" onsubmit="submitForm()">
+		<h2>Create an account</h2>
+		<form id="register-form" onsubmit="submitForm()">
 			<label for="username">Username:</label>
 			<input type="text" id="username" name="username" required><br><br>
 			<label for="password">Password:</label>
 			<input type="password" id="password" name="password" required><br><br>
-			<input type="submit" value="Login">
+			<input type="submit" value="Submit">
 		</form>
-		<li><a href="register.html">Register</a></li>
+		<li><a href="loginpage.html">Login</a></li>
 		<li><a href="forgetpassw.html">Forgot password?</a></li>
-		<script src="loginpage.js"></script>
-		</div>
+		<script src="register.js"></script>
 	</div>
 </body>
 
