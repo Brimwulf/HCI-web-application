@@ -1,5 +1,10 @@
 /* This is the style sheet for the website */
 
+@font-face {
+	font-family: Moon-Bold;
+	src: url('FontsFree-Net-MoonBold.ttf') format('truetype');
+
+}
 
 body {
 	margin: 0;
@@ -144,20 +149,20 @@ body {
 }
 
 .login-box {
-	background-color: grey;
+	margin: auto;
 	display: flex;
-	position: fixed;
+
 	width: fit-content;
-	top: 25%;
-	left: 25%;
-	justify-content: center;
+	position: relative;
 	align-items: center;
+	
 	gap: 0.5em;
 	border-radius: 10px;
+	
 	list-style: none;
-	box-shadow: 0 0 10px 0 black;
+	background-color: grey;
 }
-.login-promo, #login-form {
+.login-promo, #login-form #register-form {
     flex: 1;
     margin: 10px;
 }

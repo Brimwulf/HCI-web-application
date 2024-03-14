@@ -5,10 +5,9 @@
 	<title>Register</title>
 	<link rel="stylesheet" href="styling.css">
 </head>
-<!-- This webpage needs to have a section welcoming the user to the login page and it needs to have
-		a form where the user can enter their login details -->
 
 <body>
+	<!-- Header + navigation bar-->
 	<div class="header">
 		<h1 class="logo">This is the start of the website</h1>
 		<ul class="nav">
@@ -18,18 +17,25 @@
 			<li><a href="">placeholder</a></li>
 		</ul>
 	</div>
-	<div class="login-box">
-		<h2>Create an account</h2>
-		<form id="register-form" onsubmit="submitForm()">
-			<label for="username">Username:</label>
-			<input type="text" id="username" name="username" required><br><br>
-			<label for="password">Password:</label>
-			<input type="password" id="password" name="password" required><br><br>
-			<input type="submit" value="Submit">
-		</form>
-		<li><a href="loginpage.html">Login</a></li>
-		<li><a href="forgetpassw.html">Forgot password?</a></li>
-		<script src="register.js"></script>
+	<!-- registration form -->
+	<div class="login-box"> <!-- called login box but to use same css as the login page for uniformity-->
+		<div class="login-promo">
+			<h2>Create an account</h2>
+		</div>
+		<div class="login-right">
+			<h2>Register for an account</h2>
+			<form id="register-form" onsubmit="submitForm()">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" required><br><br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required><br><br>
+				<input type="submit" value="Submit">
+			</form>
+			<li><a href="loginpage.html">Login</a></li>
+			<li><a href="forgetpassw.html">Forgot password?</a></li>
+			<!-- javascript for registeration form-->
+			<script src="register.js"></script>
+		</div>
 	</div>
 </body>
 
