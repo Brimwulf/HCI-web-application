@@ -47,3 +47,37 @@ document.addEventListener("DOMContentLoaded", function() {
         menuToggle.classList.toggle("open");
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const imageWrapper = document.querySelector('.image-banner')
+    const imageItems = document.querySelectorAll('.image-banner > *')
+    const imageLength = imageItems.length;
+    let totalScroll = 0
+    const delay = 2000;
+
+    for(let i = 0; i < imageLength; i++) {
+        imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+    }
+
+    let autoScroll = setInterval(scroll, delay)
+    function scroll() {
+        if(totalScroll >= 2 * imageLength){
+            console.log(imageLength)
+            totalScroll = 0;
+            clearInterval(autoScroll)
+            setTimeout(() => {
+                imageWrapper.style.transition = 'none';
+                imageWrapper.style.left = '0s';
+                setTimeout(() => {
+                    imageWrapper.style.transition = '.3s';
+                });
+            });
+            autoScroll = setInterval(scroll, delay)
+        }
+        const widthEl = document.querySelector('.image-banner > :first-child').offsetWidth + 24
+        imageWrapper.style.left = `-${totalScroll * widthEl}px`
+        imageWrapper.style.transition = '.3s'
+        totalScroll++
+    }
+
+});

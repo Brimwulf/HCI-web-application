@@ -232,20 +232,39 @@
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 0.8s ease, transform 0.8s ease;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.image-banner-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	width: 100vw;
+	overflow-x: hidden;
 }
 .image-banner {
-	display: flex;
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
+	display: grid;
+	align-items: center;
+	grid-auto-flow: column;
+	grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+	grid-gap: 1.5rem;
+	position: relative;
+	left: 0;
+	transition: .3s;
 }
+/*.image-banner > * {
+	aspect-ratio: 4/3;
+}*/
 .image-banner img {
-	width: 500px;
+	width: 350px;
 	height: auto;
 	object-fit: cover;
-	padding-left: 50px;
 }
 .footer-container {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-content: center;
 	height: 500px;
