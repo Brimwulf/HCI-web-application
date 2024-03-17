@@ -1,0 +1,8 @@
+.AboutPage {
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.AboutPage h1 {
+    text-decoration: underline;
+}
