@@ -1,3 +1,6 @@
+body {
+    background-image: url('iu.png');
+}
 .login-box {
 	margin: auto;
 	display: flex;
