@@ -193,32 +193,6 @@
 	color: white;
 	background-color: red;
 }
-.homeItem {
-	background-color: #eee;
-	height: 200px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-.homeItem h1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	line-height: 12;
-	font-size: 1.5rem;
-}
-.flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	height: 300px;
-}
-.flex-container h1 {
-	font-size: 150%;
-	text-decoration: underline;
-}
 .fade-item-container {
 	display: flex;
 	align-items: center;
@@ -235,7 +209,6 @@
 	margin-left: 50px;
 	margin-right: 50px;
 }
-
 .image-banner-container {
 	display: flex;
 	flex-direction: row;

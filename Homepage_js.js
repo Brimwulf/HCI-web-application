@@ -48,6 +48,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+/*This section of code was adapted by me from code created by Fajar Nur Wahid
+Date accessed on: 16th March 2024
+Available at: https://codepen.io/fajarnurwahid/pen/VwyjLRz */
+
 document.addEventListener('DOMContentLoaded', function() {
     const imageWrapper = document.querySelector('.image-banner')
     const imageItems = document.querySelectorAll('.image-banner > *')
