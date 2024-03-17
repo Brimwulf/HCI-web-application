@@ -1,0 +1,50 @@
+.login-box {
+	margin: auto;
+	display: flex;
+
+	width: fit-content;
+	position: relative;
+	align-items: center;
+	
+	gap: 0.5em;
+	border-radius: 10px;
+	
+	list-style: none;
+	background-color: grey;
+}
+.login-promo, #login-form #register-form {
+    flex: 1;
+    margin: 10px;
+}
+
+.login-right {
+	background-color: whitesmoke;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.login-promo {
+	background-color: grey;
+	color: white;
+}
+
+input[type=text] {
+	border-radius: 10px;
+	border: black 1px solid;
+	padding: 10px
+}
+
+input[type=password] {
+	border-radius: 10px;
+	border: black 1px solid;
+	padding: 10px
+}
+
+input[type=submit] {
+	border-radius: 10px;
+	border: black 1px solid;
+	padding: 10px;
+	background-color: grey;
+	color: white;
+	width: 18rem;
+}
