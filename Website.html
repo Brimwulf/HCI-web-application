@@ -3,17 +3,29 @@
 	<head>
 		<title>HCI Web application</title>
 		<link rel="stylesheet" href="styling.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for hamburger menu-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="Homepage_js.js" defer></script>
 	</head>
 
-	<body style="background-color: #2c2c2c;">	<!--Remove the bg colour later-->
+	<body>
 		<div class="header">
-			<h1 class="logo">This is the start of the website</h1>
+			<h1 class="logo">BusinessEco</h1>
 
 			<ul class="nav">
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="loginpage.html">Login</a></li>
-				<li><a href="">placeholder</a></li>
+				<div class="menu-toggle" id="mobile-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</nav>
 			</ul>
 		</div>
 		<div class="hero">
@@ -61,20 +73,113 @@
 					<p>regenerate</p>
 				</div>
 		</div>
-		<div class="navbar2">
-			<h2>Search</h2>
-			<h2>Shuffle</h2>
+
+		<div class="fade-item-container">
+			<div class="text-fade-in" id="fade-in">
+				<h1>Lorem Ipsum</h1>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Nibh venenatis cras sed felis eget velit aliquet. Vel eros donec ac odio tempor orci dapibus ultrices in. Id eu nisl nunc mi ipsum faucibus vitae aliquet. 
+					Ipsum dolor sit amet consectetur adipiscing. Non diam phasellus vestibulum lorem sed risus ultricies. In pellentesque massa placerat duis ultricies lacus sed turpis. 
+					Aliquam faucibus purus in massa tempor nec feugiat nisl. Venenatis tellus in metus vulputate eu scelerisque. Egestas tellus rutrum tellus pellentesque eu tincidunt 
+					tortor aliquam nulla. Vitae auctor eu augue ut lectus arcu bibendum. In vitae turpis massa sed elementum. Egestas sed tempus urna et pharetra pharetra massa. 
+					Egestas tellus rutrum tellus pellentesque. Eu mi bibendum neque egestas congue quisque egestas diam. Ultricies tristique nulla aliquet enim. Dolor sed viverra 
+					ipsum nunc aliquet bibendum. Viverra ipsum nunc aliquet bibendum enim facilisis. Sit amet aliquam id diam maecenas ultricies. Netus et malesuada fames 
+					ac turpis egestas integer eget. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Vitae tortor condimentum lacinia quis vel. 
+					Faucibus et molestie ac feugiat sed lectus vestibulum. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Enim sit amet venenatis urna cursus 
+					eget. In cursus turpis massa tincidunt dui ut ornare lectus sit. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.</p>
+			</div>
 		</div>
-		<div class="homeItem">
-			<h1>Home item 1</h1>
+
+		<script src="Homepage_js.js"></script>
+
+		
+		<div class="image-banner-container">
+			<div class="image-banner">
+				<div class="image-item">
+				<img src="patreon.png">
+				</div>
+				<div class="image-item">
+				<img src="tripadvisor_5stars.png">
+				</div>
+				<div class="image-item">
+				<img src="trustpilot.png">
+				</div>
+				<div class="image-item">
+				<img src="github.png">
+				</div>
+				<div class="image-item">
+				<img src="Googlemaps.jpg">
+				</div>
+				<div class="image-item">
+				<img src="Applepay.png">
+				</div>
+				<div class="image-item">
+				<img src="patreon.png">
+				</div>
+				<div class="image-item">
+				<img src="tripadvisor_5stars.png">
+				</div>
+				<div class="image-item">
+				<img src="trustpilot.png">
+				</div>
+				<div class="image-item">
+				<img src="github.png">
+				</div>
+				<div class="image-item">
+				<img src="Googlemaps.jpg">
+				</div>
+				<!--<div class="image-item">
+				<img src="Applepay.png">
+				</div>-->
+			</div>
 		</div>
-		<div class="homeItem">
-			<h1>Home item 2</h1>
-		</div>
-		<div class="homeItem">
-			<h1>Home item 3</h1>
-		</div>
+		
+
+		<footer class="footer-container">
+			<div class="column">
+				<h1>Company</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+			<div class="column">
+				<h1>Contact</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+			<div class="column">
+				<h1>Help & FAQs</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+			<div class="column">
+				<h1>Careers</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+			<div class="column">
+				<h1>Social</h1>
+				<p>Lorem</p>
+				<p>Ipsum</p>
+				<p>Dolor</p>
+				<p>Sit</p>
+				<p>Amet</p>
+			</div>
+		</footer>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 		<script src="Website.js"></script>
+
 	</body>
 </html>
