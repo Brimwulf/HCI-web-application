@@ -65,12 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let autoScroll = setInterval(scroll, delay)
     function scroll() {
-        if(totalScroll >= 2 * imageLength){
+    totalScroll++
+        if(totalScroll >= 24){
             console.log(imageLength)
             totalScroll = 0;
             clearInterval(autoScroll)
             setTimeout(() => {
-                imageWrapper.style.transition = 'none';
+                imageWrapper.style.transition = '.3s';
                 imageWrapper.style.left = '0s';
                 setTimeout(() => {
                     imageWrapper.style.transition = '.3s';
@@ -81,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const widthEl = document.querySelector('.image-banner > :first-child').offsetWidth + 24
         imageWrapper.style.left = `-${totalScroll * widthEl}px`
         imageWrapper.style.transition = '.3s'
-        totalScroll++
+        console.log(totalScroll)
     }
 
 });
