@@ -10,34 +10,85 @@
 <body>
 	<!-- Header + navigation bar-->
 	<div class="header">
-		<h1 class="logo">This is the start of the website</h1>
+		<h1 class="logo">BusinessEco</h1>
 		<ul class="nav">
-			<li><a href="Website.html">Home</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="loginpage.html">Login</a></li>
-			<li><a href="">placeholder</a></li>
+			<nav class="menu">
+				<ul>
+					<li><a href="Website.html">Home</a></li>
+					<li><a href="AboutPage.html">About</a></li>
+					<li><a href="loginpage.html">Login</a></li>
+					<li><a href="register.html">Sign Up</a></li>
+				</ul>
+			</nav>
 		</ul>
 	</div>
 	<!-- login box -->
-	<div class="login-box">
-		<div class="login-promo">
-			<h2>Get personalised recommendations with an account</h2>
-		</div>
-		<div class="login-right">
-			<h2>Login to your account</h2>
-			<form id="login-form" onsubmit="submitForm()">
-				<label for="username">Username:</label>
-				<input type="text" id="username" name="username" required><br><br>
-				<label for="password">Password:</label>
-				<input type="password" id="password" name="password" required><br><br>
-				<input type="submit" value="Login">
-			</form>
-			<li><a href="register.html">Register</a></li>
-			<li><a href="forgetpassw.html">Forgot password?</a></li>
-			<!-- login java script-->
-			<script src="loginpage.js"></script>
+	<div class="login-box-container">
+		<img src="iu.png">
+		<div class="login-box">
+			<div class="login-promo">
+				<h2>Get personalised recommendations with an account</h2>
+			</div>
+			<div class="login-right">
+				<h2>Login to your account</h2>
+				<form id="login-form" onsubmit="submitForm()">
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required><br><br>
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required><br><br>
+					<input type="submit" value="Login">
+				</form>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="forgetpassw.html">Forgot password?</a></li>
+				<!-- login java script-->
+				<script src="loginpage.js"></script>
+			</div>
 		</div>
 	</div>
+
+	<footer class="footer-container">
+		<div class="column">
+			<h1>Company</h1>
+			<p>Lorem</p>
+			<p>Ipsum</p>
+			<p>Dolor</p>
+			<p>Sit</p>
+			<p>Amet</p>
+		</div>
+		<div class="column">
+			<h1>Contact</h1>
+			<p>Lorem</p>
+			<p>Ipsum</p>
+			<p>Dolor</p>
+			<p>Sit</p>
+			<p>Amet</p>
+		</div>
+		<div class="column">
+			<h1>Help & FAQs</h1>
+			<p>Lorem</p>
+			<p>Ipsum</p>
+			<p>Dolor</p>
+			<p>Sit</p>
+			<p>Amet</p>
+		</div>
+		<div class="column">
+			<h1>Careers</h1>
+			<p>Lorem</p>
+			<p>Ipsum</p>
+			<p>Dolor</p>
+			<p>Sit</p>
+			<p>Amet</p>
+		</div>
+		<div class="column">
+			<h1>Social</h1>
+			<p>Lorem</p>
+			<p>Ipsum</p>
+			<p>Dolor</p>
+			<p>Sit</p>
+			<p>Amet</p>
+		</div>
+	</footer>
+
 </body>
 
 </html>

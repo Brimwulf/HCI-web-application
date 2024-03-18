@@ -1,12 +1,25 @@
-body {
-    background-image: url('iu.png');
+.login-box-container {
+	display: flex;
+	position: relative;
+	height: 750px;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+.login-box-container img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 .login-box {
 	margin: auto;
+	margin-bottom: 50px;
 	display: flex;
 
 	width: fit-content;
-	position: relative;
+	position: absolute;
 	align-items: center;
 	
 	gap: 0.5em;
@@ -14,6 +27,11 @@ body {
 	
 	list-style: none;
 	background-color: grey;
+	z-index: 2;
+}
+.login-box h2 {
+	display: flex;
+	width: 300px;
 }
 .login-promo, #login-form #register-form {
     flex: 1;
